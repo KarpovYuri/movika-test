@@ -1,0 +1,64 @@
+.root {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  min-width: 667px;
+}
+
+.uncovered {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./img/Uncovered.png);
+  min-width: 667px;
+  min-height: 375px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .8;
+}
+
+.time-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 62px;
+  height: 280px;
+  position: relative;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.time-line_left {
+  margin-left: 20px;
+  background-position: left;
+  background-image: url(./img/time-left.png);
+}
+
+.time-line_right {
+  margin-right: 20px;
+  background-position: right;
+  background-image: url(./img/time-right.png);
+}
+
+.timer {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  z-index: 2;
+  margin: 0;
+}
