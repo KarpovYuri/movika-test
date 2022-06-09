@@ -1,0 +1,17 @@
+@keyframes move {
+  from {
+    left: 0;
+    transform: translateX(0%);
+  }
+
+  to {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+}
+
+.animation {
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}

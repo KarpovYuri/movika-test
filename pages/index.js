@@ -7,10 +7,10 @@ const timeLineWidth = 33;
 const timeLineHeight = 280;
 
 
-const counts = document.querySelectorAll('.timer');
-const timeLines = document.querySelectorAll('.time-line__svg-img');
-const button = document.querySelector('.button');
-const video = document.querySelector('.video');
+const counts = document.querySelectorAll('.time-line__timer');
+const timeLines = document.querySelectorAll('.time-line__img');
+const button = document.querySelector('.btn-container__button');
+const video = document.querySelector('.app-container__video');
 let mirror = 1;
 let countDown = null;
 

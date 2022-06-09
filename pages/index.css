@@ -1,0 +1,14 @@
+@import url(../blocks/animation/animation.css);
+@import url(../blocks/btn-container/btn-container.css);
+@import url(../blocks/time-line/time-line.css);
+@import url(../blocks/app-container/app-container.css);
+
+.root {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  min-width: 667px;
+}

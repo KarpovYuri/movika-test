@@ -1,0 +1,9 @@
+.btn-container {
+  width: 74%;
+}
+
+.btn-container__button {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}

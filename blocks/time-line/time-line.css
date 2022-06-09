@@ -1,0 +1,44 @@
+.time-line {
+  display: flex;
+  align-items: center;
+  width: 62px;
+  height: 280px;
+  position: relative;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.time-line_position_left {
+  justify-content: flex-start;
+  margin-left: 20px;
+  background-position: left;
+  background-image: url(../../img/time-bg-left.svg);
+}
+
+.time-line_position_right {
+  justify-content: flex-end;
+  margin-right: 20px;
+  background-position: right;
+  background-image: url(../../img/time-bg-right.svg);
+}
+
+.time-line__timer {
+  max-width: 50px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  z-index: 2;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time-line__timer_position_left {
+  right: 0;
+}
+
+.time-line__timer_position_right {
+  left: 0;
+}
