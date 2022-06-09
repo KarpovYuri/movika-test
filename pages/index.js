@@ -1,5 +1,5 @@
 // Установка начального значения счетчика
-const startTimer = 100;
+const startTimer = 10;
 let timer = startTimer - 1;
 
 // Устанавливаем размеры таймлайнов
@@ -11,6 +11,7 @@ const counts = document.querySelectorAll('.time-line__timer');
 const timeLines = document.querySelectorAll('.time-line__img');
 const button = document.querySelector('.btn-container__button');
 const video = document.querySelector('.app-container__video');
+const btnContainer = document.querySelector('.btn-container');
 let mirror = 1;
 let countDown = null;
 
@@ -26,6 +27,8 @@ function startCountDown() {
     }
     if (timer < 0) {
       clearInterval(countDown);
+      btnContainer.classList.add('btn-container__text');
+      btnContainer.textContent = 'Интерактив не пройден!';
     } else {
 
       // Перерисовываем счетчик

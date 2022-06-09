@@ -1,5 +1,13 @@
 .btn-container {
   width: 74%;
+  z-index: 2;
+}
+
+.btn-container__text {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .btn-container__button {
