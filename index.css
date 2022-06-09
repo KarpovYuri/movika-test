@@ -40,7 +40,6 @@
 
 .time-line {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 62px;
   height: 280px;
@@ -50,28 +49,42 @@
 }
 
 .time-line_left {
+  justify-content: flex-start;
   margin-left: 20px;
   background-position: left;
   background-image: url(./img/time-bg-left.svg);
 }
 
 .time-line_right {
+  justify-content: flex-end;
   margin-right: 20px;
   background-position: right;
   background-image: url(./img/time-bg-right.svg);
 }
 
 .timer {
+  max-width: 50px;
+  position: absolute;
   font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 12px;
   font-weight: 400;
   z-index: 2;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timer_left {
+  right: 0;
+}
+
+.timer_right {
+  left: 0;
 }
 
 .button-wrapper {
-  width: 100%;
+  width: 74%;
 }
 
 .button {

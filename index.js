@@ -1,5 +1,5 @@
 // Установка начального значения счетчика
-const startTimer = 20;
+const startTimer = 100;
 let timer = startTimer - 1;
 
 // Устанавливаем размеры таймлайнов
