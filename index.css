@@ -52,13 +52,13 @@
 .time-line_left {
   margin-left: 20px;
   background-position: left;
-  background-image: url(./img/time-left.png);
+  background-image: url(./img/time-bg-left.svg);
 }
 
 .time-line_right {
   margin-right: 20px;
   background-position: right;
-  background-image: url(./img/time-right.png);
+  background-image: url(./img/time-bg-right.svg);
 }
 
 .timer {
