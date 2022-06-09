@@ -1,12 +1,12 @@
 .btn-container {
-  width: 74%;
+  width: 80vw;
   z-index: 2;
 }
 
 .btn-container__text {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -14,4 +14,18 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
+  width: 13vw;
+  height: 13vw;
+}
+
+@media (max-width: 480px) {
+  .btn-container__text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn-container__text {
+    font-size: 28px;
+  }
 }

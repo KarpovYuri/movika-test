@@ -1,19 +1,17 @@
 // Установка начального значения счетчика
-const startTimer = 10;
-let timer = startTimer - 1;
-
-// Устанавливаем размеры таймлайнов
-const timeLineWidth = 33;
-const timeLineHeight = 280;
-
+const startTimer = 100;
+const timeLineHeight = 42;
 
 const counts = document.querySelectorAll('.time-line__timer');
-const timeLines = document.querySelectorAll('.time-line__img');
+const timeLines = document.querySelectorAll('.time-line__img-wrapper');
 const button = document.querySelector('.btn-container__button');
 const video = document.querySelector('.app-container__video');
 const btnContainer = document.querySelector('.btn-container');
-let mirror = 1;
+
 let countDown = null;
+let timer = startTimer - 1;
+let mirror = 1;
+
 
 
 // Функция запуска обратного отсчета
@@ -41,10 +39,7 @@ function startCountDown() {
       const height = (startTimer - timer) * timeLineHeight / startTimer;
 
       // Отрисовываем красный таймлайн
-      timeLines.forEach(item => {
-        item.setAttribute('height', `${height}`);
-        item.setAttribute('viewBox', `0 ${(timeLineHeight - height) / 2} ${timeLineWidth} ${height}`);
-      });
+      timeLines.forEach(item => item.style.height = `${height}vw`);
     }
     timer -= 1;
   }, 1000);
@@ -87,9 +82,6 @@ button.addEventListener('click', handleClick);
 
 // Устанавливаем начальное значение счетчиков
 counts.forEach(item => item.textContent = startTimer);
-
-// Устанавливаем ширину Тайм лайнов
-timeLines.forEach(item => item.setAttribute('width', `${timeLineWidth}`));
 
 // Запускаем анимацию кнопки
 button.style.animationDuration = `${startTimer}s`;

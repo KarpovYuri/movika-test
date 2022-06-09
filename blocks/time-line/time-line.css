@@ -1,23 +1,23 @@
 .time-line {
   display: flex;
   align-items: center;
-  width: 62px;
-  height: 280px;
+  width: 10vw;
+  height: 42vw;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
+  background-size: 5vw 42vw;
 }
 
 .time-line_position_left {
-  justify-content: flex-start;
-  margin-left: 20px;
+  margin-left: 3vw;
   background-position: left;
   background-image: url(../../img/time-bg-left.svg);
 }
 
 .time-line_position_right {
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 3vw;
   background-position: right;
   background-image: url(../../img/time-bg-right.svg);
 }
@@ -41,4 +41,30 @@
 
 .time-line__timer_position_right {
   left: 0;
+}
+
+.time-line__img-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 5vw;
+  height: 0;
+}
+
+.time-line__img {
+  align-items: center;
+  width: 5vw;
+  height: 42vw;
+}
+
+@media (max-width: 480px) {
+  .time-line__timer {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .time-line__timer {
+    font-size: 18px;
+  }
 }
